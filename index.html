@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+</head>
+
+<style type="text/css">
+  body {
+    user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select: none;
+    -moz-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-drag:none;
+    -khtml-user-drag:none;
+
+  }
+  .site-header{
+    position: fixed;
+  }
+</style>
+
+<header class="site-header">
+  <h1>charsim</h1>
+  <!--
+  touch-action: none; スマホでタップしたままスワイプするとpointerupイベントが発生しない現象の防止
+  user-select: none;　及び oncontextmenu="return false;" 長押し時のポップアップ停止
+  -->
+
+  <canvas id="can"></canvas>
+  <select id="data1"></select>
+  <select id="data2"></select>
+  <select id="data3" size = "30"></select>
+  <input type="button" value="追加" onclick="clickBtnAdd()" />
+  <input type="button" value="削除" onclick="clickBtnDel()" />
+  <input type="button" value="実行" onclick="clickBtnExe()" />
+ 
+  
+  <script src="./js/GameControl.js"></script>
+  <script src="./js/Character.js"></script>
+  <script src="./js/CharacterControl.js"></script>
+  <script src="./js/Player.js"></script>
+  <script src="./js/PlayerControl.js"></script>
+  <script src="./js/HtmlControl.js"></script>
+  <script src="./js/Stage.js"></script>
+  <script src="./js/Action.js"></script>
+  <script src="./js/Simuration.js"></script>
+  <script src="./js/main.js"></script>
+</header>
+
+
+
+  
+</html>
